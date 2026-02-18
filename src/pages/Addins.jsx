@@ -140,11 +140,11 @@ const Addins = () => {
                             </p>
 
                             <div style={{ display: 'flex', gap: '1rem' }}>
-                                <a href={selectedTool.downloadLink} className="btn btn-primary">
-                                    <Download size={18} /> Descargar
+                                <a href={selectedTool.downloadLink} className="btn btn-outline" target='_blank' rel='noreferrer'>
+                                    Ver en App Store
                                 </a>
-                                <a href={selectedTool.demoLink} className="btn btn-outline">
-                                    <Play size={18} /> Ver Demo Externa
+                                <a href={selectedTool.demoLink} className="btn btn-primary" target='_blank' rel='noreferrer'>
+                                    <Play size={18} /> Ver Demo
                                 </a>
                             </div>
                         </div>

@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ForumPostCard from '../components/ForumPostCard';
 import forumData from '../data/forum_posts.json';
 
 const Forum = () => {
-    const [selectedTag, setSelectedTag] = React.useState('Todos');
+    const [selectedTag, setSelectedTag] = useState('Todos');
 
     // Extract unique tags
     const allTags = ['Todos', ...new Set(forumData.flatMap(post => post.tags || []))];
@@ -12,6 +12,7 @@ const Forum = () => {
     const filteredPosts = selectedTag === 'Todos'
         ? forumData
         : forumData.filter(post => post.tags && post.tags.includes(selectedTag));
+
 
     return (
         <div style={{ padding: '2rem' }}>
@@ -61,11 +62,11 @@ const Forum = () => {
                         <div className="stat-label">Soluciones Aceptadas</div>
                     </div>
                     <div className="stat-item">
-                        <div className="stat-number">Top 10</div>
+                        <div className="stat-number">10</div>
                         <div className="stat-label">Advisor</div>
                     </div>
                     <div className="stat-item">
-                        <div className="stat-number">Civil 3D</div>
+                        <div className="stat-number">Infra</div>
                         <div className="stat-label">Especialidad</div>
                     </div>
                 </div>

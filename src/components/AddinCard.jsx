@@ -35,19 +35,10 @@ const AddinCard = ({ tool, onOpen }) => {
                 <button
                     onClick={(e) => {
                         e.stopPropagation();
-                        // Handle download logic or link
-                        window.open(tool.downloadLink, '_blank');
-                    }}
-                    className="btn btn-primary btn-sm"
-                >
-                    <Download size={18} /> Descargar
-                </button>
-                <button
-                    onClick={(e) => {
-                        e.stopPropagation();
                         onOpen();
                     }}
-                    className="btn btn-outline btn-sm"
+                    className="btn btn-primary btn-sm"
+                    style={{ width: '100%' }}
                 >
                     + Info / Video
                 </button>

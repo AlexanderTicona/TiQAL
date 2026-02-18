@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, Outlet, useLocation } from 'react-router-dom';
-import { Menu, X, Youtube, Linkedin, Mail } from 'lucide-react';
+import { Menu, X, Youtube, Linkedin, Facebook } from 'lucide-react';
 import profileData from '../data/profile.json';
 import '../styles/index.css';
 import logo from '../assets/logo.png';
@@ -135,8 +135,8 @@ const Footer = () => (
         <a href={profileData.links.linkedin} target="_blank" rel="noopener noreferrer">
           <Linkedin size={24} />
         </a>
-        <a href={profileData.links.email} target="_blank" rel="noopener noreferrer">
-          <Mail size={24} />
+        <a href={profileData.links.facebook} target="_blank" rel="noopener noreferrer">
+          <Facebook size={24} />
         </a>
         <a href={profileData.links.youtube} target="_blank" rel="noopener noreferrer">
           <Youtube size={24} />
@@ -144,8 +144,6 @@ const Footer = () => (
       </div>
       <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
         &copy; {new Date().getFullYear()} {profileData.name} | {profileData.title}
-        <br />
-        Built with React & Engineering Precision.
       </p>
     </div>
   </footer>
