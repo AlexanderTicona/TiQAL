@@ -6,7 +6,12 @@
         "summary": "Discusión sobre el manejo y extracción de coordenadas desde polilíneas para aplicaciones topográficas.",
         "link": "https://forums.autodesk.com/t5/autocad-espanol/polilinea-con-coordenadas/m-p/7550117#M7953",
         "isSolution": true,
-        "date": "2017"
+        "date": "2017",
+        "tags": [
+            "#AutoCAD",
+            "#Topografia",
+            "#Poligonal"
+        ]
     },
     {
         "id": "frm-02",
@@ -15,7 +20,12 @@
         "summary": "Explicación detallada sobre la definición y uso correcto de líneas de rotura para modelado de terreno.",
         "link": "https://forums.autodesk.com/t5/autocad-civil-3d-infra-geo/lineas-de-rotura/m-p/7858443",
         "isSolution": true,
-        "date": "2018"
+        "date": "2018",
+        "tags": [
+            "#Civil3D",
+            "#Superficies",
+            "#Breaklines"
+        ]
     },
     {
         "id": "frm-03",
@@ -24,7 +34,12 @@
         "summary": "Resolución de dudas sobre la creación y edición de plataformas (Gradings) y cálculo de volúmenes.",
         "link": "https://forums.autodesk.com/t5/civil-3d-infra-geo-espanol/plataforma/m-p/8404348#M18809",
         "isSolution": true,
-        "date": "2018"
+        "date": "2018",
+        "tags": [
+            "#Civil3D",
+            "#Grading",
+            "#Volumenes"
+        ]
     },
     {
         "id": "frm-04",
@@ -33,7 +48,12 @@
         "summary": "Métodos para convertir mallas de triangulación (3DFaces/Polilíneas) en una Superficie TIN editable.",
         "link": "https://forums.autodesk.com/t5/autocad-civil-3d-infra-geo/como-convertir-triangulacion-hecha-con-lineas-o-polylineas-en-en/td-p/7953987",
         "isSolution": true,
-        "date": "2018"
+        "date": "2018",
+        "tags": [
+            "#Civil3D",
+            "#Superficies",
+            "#TIN"
+        ]
     },
     {
         "id": "frm-05",
@@ -42,7 +62,12 @@
         "summary": "Cómo añadir y gestionar atributos definidos por el usuario (UDP) como progresivas en puntos COGO.",
         "link": "https://forums.autodesk.com/t5/autocad-civil-3d-infra-geo/anadir-atributos-a-puntos-cogo-como-la-progresiva-de-un/td-p/7818130",
         "isSolution": true,
-        "date": "2018"
+        "date": "2018",
+        "tags": [
+            "#Civil3D",
+            "#PuntosCOGO",
+            "#UDP"
+        ]
     },
     {
         "id": "frm-06",
@@ -51,6 +76,11 @@
         "summary": "Técnicas para proyectar una serie de puntos sobre una superficie para obtener elevaciones precisas.",
         "link": "https://forums.autodesk.com/t5/civil-3d-infra-geo-espanol/como-proyectar-una-serie-de-puntos-sobre-una-superficie-de-civil/m-p/7434054#M13742",
         "isSolution": true,
-        "date": "2017"
+        "date": "2017",
+        "tags": [
+            "#Civil3D",
+            "#Puntos",
+            "#Elevaciones"
+        ]
     }
 ]

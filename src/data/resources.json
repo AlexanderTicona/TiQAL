@@ -39,5 +39,13 @@
             "content": "Los grupos de puntos son fundamentales para organizar grandes levantamientos. Utiliza consultas SQL para filtrar puntos por descripción o elevación.",
             "image": "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=800&q=80"
         }
-    ]
+    ],
+    "Superficies": [],
+    "Perfiles": [],
+    "Ensamblajes": [],
+    "Corredores": [],
+    "Secciones": [],
+    "SubassemblyComposer": [],
+    "Dynamo": [],
+    "Otros": []
 }

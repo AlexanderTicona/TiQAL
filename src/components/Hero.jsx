@@ -16,6 +16,16 @@ const Hero = () => {
                     <span className="text-gradient">{profileData.name}</span>
                 </h1>
 
+                <div className="hero-fullname" style={{
+                    fontSize: '1.5rem',
+                    fontWeight: '300',
+                    marginBottom: '1rem',
+                    opacity: '0.9',
+                    letterSpacing: '0.05em'
+                }}>
+                    {profileData.fullName}
+                </div>
+
                 <h2 className="hero-subtitle">
                     {profileData.title}
                 </h2>

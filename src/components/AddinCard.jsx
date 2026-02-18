@@ -1,9 +1,9 @@
 import React from 'react';
 import { Download, Youtube, CheckCircle } from 'lucide-react';
 
-const AddinCard = ({ tool }) => {
+const AddinCard = ({ tool, onOpen }) => {
     return (
-        <div className="addin-card">
+        <div className="addin-card" onClick={onOpen} style={{ cursor: 'pointer' }}>
             <div className="addin-header">
                 <div className="addin-icon-container">
                     {tool.image ? (
@@ -32,12 +32,25 @@ const AddinCard = ({ tool }) => {
             </div>
 
             <div className="addin-actions">
-                <a href={tool.downloadLink} className="btn btn-primary btn-sm">
+                <button
+                    onClick={(e) => {
+                        e.stopPropagation();
+                        // Handle download logic or link
+                        window.open(tool.downloadLink, '_blank');
+                    }}
+                    className="btn btn-primary btn-sm"
+                >
                     <Download size={18} /> Descargar
-                </a>
-                <a href={tool.demoLink} className="btn btn-outline btn-sm">
-                    <Youtube size={18} /> Demo
-                </a>
+                </button>
+                <button
+                    onClick={(e) => {
+                        e.stopPropagation();
+                        onOpen();
+                    }}
+                    className="btn btn-outline btn-sm"
+                >
+                    + Info / Video
+                </button>
             </div>
         </div>
     );

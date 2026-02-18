@@ -3,16 +3,56 @@ import ForumPostCard from '../components/ForumPostCard';
 import forumData from '../data/forum_posts.json';
 
 const Forum = () => {
+    const [selectedTag, setSelectedTag] = React.useState('Todos');
+
+    // Extract unique tags
+    const allTags = ['Todos', ...new Set(forumData.flatMap(post => post.tags || []))];
+
+    // Filter posts
+    const filteredPosts = selectedTag === 'Todos'
+        ? forumData
+        : forumData.filter(post => post.tags && post.tags.includes(selectedTag));
+
     return (
-        <div style={{ padding: '4rem 2rem' }}>
+        <div style={{ padding: '2rem' }}>
             <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
-                <div className="hero-badge">Comunidad Autodesk</div>
+
                 <h1 className="section-title">
-                    Contribuciones al <span className="text-gradient">Foro Autodesk</span>
+                    Comunidad <span className="text-gradient"> Autodesk</span>
                 </h1>
                 <p className="section-description">
-                    Participación activa en los foros oficiales de Autodesk, resolviendo dudas y compartiendo metodologías sobre Civil 3D e Infraworks.
+                    Participación en los foros oficiales de Autodesk, resolviendo consultas y compartiendo metodologías sobre Civil 3D e Infraworks.
                 </p>
+
+                {/* Tags Filter */}
+                <div style={{
+                    display: 'flex',
+                    flexWrap: 'wrap',
+                    justifyContent: 'center',
+                    gap: '0.5rem',
+                    marginTop: '2rem',
+                    marginBottom: '2rem'
+                }}>
+                    {allTags.map(tag => (
+                        <button
+                            key={tag}
+                            onClick={() => setSelectedTag(tag)}
+                            style={{
+                                background: selectedTag === tag ? 'var(--accent-primary)' : 'rgba(30, 41, 59, 0.5)',
+                                color: selectedTag === tag ? 'white' : 'var(--accent-primary)',
+                                border: selectedTag === tag ? 'none' : '1px solid rgba(14, 165, 233, 0.3)',
+                                padding: '0.25rem 0.75rem',
+                                borderRadius: '999px',
+                                cursor: 'pointer',
+                                fontSize: '0.85rem',
+                                transition: 'all 0.2s',
+                                fontWeight: '500'
+                            }}
+                        >
+                            {tag}
+                        </button>
+                    ))}
+                </div>
 
                 {/* Community Stats - Optional visual flair */}
                 <div className="community-stats">
@@ -32,7 +72,7 @@ const Forum = () => {
             </div>
 
             <div className="forum-grid">
-                {forumData.map((post) => (
+                {filteredPosts.map((post) => (
                     <ForumPostCard key={post.id} post={post} />
                 ))}
             </div>
@@ -49,7 +89,7 @@ const Forum = () => {
             {/* Certifications Section - Subtle/Low Profile */}
             <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
                 <h3 className="section-title" style={{ fontSize: '1.2rem', marginBottom: '1.5rem', opacity: 0.8 }}>
-                    Certificaciones & <span className="text-gradient">Affiliations</span>
+                    Certificaciones & <span className="text-gradient">Reconocimientos</span>
                 </h3>
 
                 <div style={{

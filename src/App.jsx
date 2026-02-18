@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Addins from './pages/Addins';
 import Resources from './pages/Resources';
+import ResourcesInfraworks from './pages/ResourcesInfraworks';
 import Forum from './pages/Forum';
 import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
@@ -19,6 +20,7 @@ function App() {
         <Route path="projects" element={<Projects />} />
         <Route path="addins" element={<Addins />} />
         <Route path="resources" element={<Resources />} />
+        <Route path="resources-infraworks" element={<ResourcesInfraworks />} />
         <Route path="forum" element={<Forum />} />
         <Route path="contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />

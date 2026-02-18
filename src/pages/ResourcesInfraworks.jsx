@@ -1,23 +1,15 @@
 import React, { useState } from 'react';
-import { ChevronRight, BookOpen, Layers, Map, Activity, Mountain, Box, Cpu, Zap, Folder } from 'lucide-react';
+import { ChevronRight, Image, BookOpen, Box } from 'lucide-react';
 import ResourceItem from '../components/ResourceItem';
-import resourcesData from '../data/resources.json';
+import resourcesData from '../data/resources_infraworks.json';
 
-const Resources = () => {
-    const [activeCategory, setActiveCategory] = useState('General');
+const ResourcesInfraworks = () => {
+    const [activeCategory, setActiveCategory] = useState('Galeria');
 
     const categories = [
+        { id: 'Galeria', label: 'Galería', icon: <Image size={18} /> },
         { id: 'General', label: 'General', icon: <BookOpen size={18} /> },
-        { id: 'Puntos', label: 'Puntos Cogo', icon: <Map size={18} /> },
-        { id: 'Superficies', label: 'Superficies', icon: <Mountain size={18} /> },
-        { id: 'Alineamientos', label: 'Alineamientos', icon: <Activity size={18} /> },
-        { id: 'Perfiles', label: 'Perfiles', icon: <Activity size={18} /> },
-        { id: 'Ensamblajes', label: 'Ensamblajes', icon: <Box size={18} /> },
-        { id: 'Corredores', label: 'Corredores (Obra Lineal)', icon: <Layers size={18} /> },
-        { id: 'Secciones', label: 'Secciones Transversales', icon: <Layers size={18} /> },
-        { id: 'SubassemblyComposer', label: 'Subassembly Composer', icon: <Cpu size={18} /> },
-        { id: 'Dynamo', label: 'Dynamo', icon: <Zap size={18} /> },
-        { id: 'Otros', label: 'Otros', icon: <Folder size={18} /> },
+        { id: 'Modelamiento', label: 'Modelamiento', icon: <Box size={18} /> },
     ];
 
     const activeResources = resourcesData[activeCategory] || [];
@@ -26,7 +18,7 @@ const Resources = () => {
         <div className="resources-container">
             {/* Sidebar Navigation */}
             <aside className="resources-sidebar">
-                <h3 className="sidebar-title">Aula Virtual</h3>
+                <h3 className="sidebar-title">Infraworks</h3>
                 <nav className="sidebar-nav">
                     {categories.map((cat) => (
                         <div
@@ -50,7 +42,7 @@ const Resources = () => {
                         <span className="text-gradient">{categories.find(c => c.id === activeCategory)?.label}</span>
                     </h1>
                     <p style={{ color: 'var(--text-secondary)' }}>
-                        Recursos educativos, tutoriales y scripts para {activeCategory}.
+                        Recursos y tutoriales de Infraworks para {activeCategory}.
                     </p>
                 </div>
 
@@ -72,7 +64,7 @@ const Resources = () => {
                             </p>
                             <br />
                             <p style={{ color: 'var(--accent-primary)', opacity: 0.7 }}>
-                                🚧 Estamos preparando tutoriales para <strong>{activeCategory}</strong>.
+                                🚧 Estamos preparando material sobre <strong>{activeCategory}</strong>.
                             </p>
                         </div>
                     )}
@@ -82,4 +74,4 @@ const Resources = () => {
     );
 };
 
-export default Resources;
+export default ResourcesInfraworks;

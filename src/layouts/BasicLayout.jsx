@@ -3,6 +3,7 @@ import { Link, Outlet, useLocation } from 'react-router-dom';
 import { Menu, X, Youtube, Linkedin, Mail } from 'lucide-react';
 import profileData from '../data/profile.json';
 import '../styles/index.css';
+import logo from '../assets/logo.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,10 +11,11 @@ const Navbar = () => {
 
   const links = [
     { name: 'Inicio', path: '/' },
-    { name: 'Proyectos', path: '/projects' },
+    { name: 'Recursos Civil 3D', path: '/resources' },
+    { name: 'Recursos Infraworks', path: '/resources-infraworks' },
+    { name: 'Foro Autodesk', path: '/forum' },
     { name: 'Add-ins & Tools', path: '/addins' },
-    { name: 'Recursos / Aula', path: '/resources' },
-    { name: 'Foro Civil 3D', path: '/forum' },
+    { name: 'Proyectos', path: '/projects' },
     { name: 'Contacto', path: '/contact' },
   ];
 
@@ -29,7 +31,7 @@ const Navbar = () => {
       borderBottom: '1px solid var(--grid-line)'
     }}>
       <div style={{
-        maxWidth: '1200px',
+        maxWidth: '1600px',
         margin: '0 auto',
         padding: '1rem 2rem',
         display: 'flex',
@@ -44,9 +46,7 @@ const Navbar = () => {
           alignItems: 'center',
           gap: '0.5rem'
         }}>
-          <span style={{ color: 'var(--accent-primary)' }}>&#123;</span>
-          {profileData.name}
-          <span style={{ color: 'var(--accent-primary)' }}>&#125;</span>
+          <img src={logo} alt="TiQAL Logo" style={{ height: '40px', width: 'auto' }} />
         </Link>
 
         {/* Desktop Menu */}
@@ -123,7 +123,7 @@ const Footer = () => (
     borderTop: '1px solid var(--grid-line)'
   }}>
     <div style={{
-      maxWidth: '1200px',
+      maxWidth: '1600px',
       margin: '0 auto',
       display: 'flex',
       flexDirection: 'column',

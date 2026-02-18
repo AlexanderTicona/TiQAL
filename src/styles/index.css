@@ -12,7 +12,7 @@
     /* Slate 50 */
     --text-secondary: #94a3b8;
     /* Slate 400 */
-    --grid-line: rgba(148, 163, 184, 0.1);
+    --grid-line: rgba(148, 163, 184, 0.00);
 
     /* Typography */
     --font-main: 'Inter', system-ui, sans-serif;
@@ -39,30 +39,28 @@ body {
     background-image:
         linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
         linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
+    width: 100%;
+    height: 100%;
     z-index: -1;
     mask-image: linear-gradient(to bottom, black 40%, transparent 100%);
 }
 
-/* Topographic Contour Background */
+/* Background Effect - Topography (Custom SVG) */
 .bg-contours {
     position: fixed;
-    /* Fixed so it stays while scrolling */
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: -1;
     pointer-events: none;
-    opacity: 0.15;
-    /* Increased opacity for better visibility */
-    /* Complex contour SVG pattern */
-    background-image: url("data:image/svg+xml,%3Csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cpattern id='contour_pattern' width='600' height='600' patternUnits='userSpaceOnUse'%3E%3Cpath d='M0 600C82.8 522.2 165.7 444.4 251.3 435.3C336.8 426.2 425 485.8 488.3 520.6C551.7 555.4 590.2 565.4 600 567M0 550C75.5 480 151 410 240 400C329 390 431.5 440 480 480C528.5 520 570 545 600 550M0 500C60 440 120 380 220 370C320 360 430 400 470 420C510 440 560 480 600 500M0 450C50 400 100 350 200 340C300 330 420 360 460 380C500 400 550 430 600 450M0 400C40 360 80 320 180 310C280 300 410 320 450 340C490 360 540 380 600 400M0 350C30 320 60 290 160 280C260 270 400 280 440 300C480 320 530 340 600 350M0 300C20 280 40 260 140 250C240 240 390 240 430 260C470 280 520 300 600 300M0 250C10 240 20 230 120 220C220 210 380 200 420 220C460 240 510 260 600 250M0 200C5 195 10 190 100 190C190 190 370 160 410 180C450 200 500 220 600 200M0 150C0 150 0 150 80 160C160 170 360 120 400 140C440 160 490 180 600 150M0 100C0 100 0 100 60 130C120 160 350 80 390 100C430 120 480 140 600 100M0 50C0 50 0 50 40 100C80 150 340 40 380 60C420 80 470 100 600 50M0 0C0 0 0 0 20 70C40 140 330 0 370 20C410 40 460 60 600 0' stroke='%2338bdf8' stroke-width='0.8' fill='none'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23contour_pattern)'/%3E%3C/svg%3E");
-    background-size: 600px 600px;
+    opacity: 0.05;
+    background-image: url('../assets/topography.svg');
+    background-size: cover;
+    background-position: center;
 }
 
 a {
@@ -77,7 +75,7 @@ a:hover {
 
 /* Resources Section */
 .resources-container {
-    max-width: 1200px;
+    max-width: 1600px;
     margin: 0 auto;
     padding: 2rem;
     display: flex;
@@ -821,7 +819,9 @@ a:hover {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
-}/* Forum Section */
+}
+
+/* Forum Section */
 .forum-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));

@@ -4,6 +4,7 @@
         "name": "Slope Pattern Generator",
         "version": "v2.1",
         "description": "Genera patrones de talud automáticos en Civil 3D. Compatible con versiones 2022-2025.",
+        "longDescription": "Esta herramienta permite la generación automática de barbadas (patrones de talud) en Civil 3D. A diferencia de las herramientas nativas, ofrece control total sobre la geometría, espaciado y estilos. Ideal para planos de presentación final donde la estética es crucial.",
         "features": [
             "Patrones personalizables",
             "Actualización dinámica",
@@ -11,13 +12,16 @@
         ],
         "downloadLink": "#",
         "demoLink": "#",
-        "image": "https://images.unsplash.com/photo-1581094794329-cd11965d152a?auto=format&fit=crop&w=800&q=80"
+        "videoUrl": "https://www.youtube.com/embed/placeholder1",
+        "image": "https://images.unsplash.com/photo-1581094794329-cd11965d152a?auto=format&fit=crop&w=800&q=80",
+        "screenshot": "https://images.unsplash.com/photo-1581094794329-cd11965d152a?auto=format&fit=crop&w=800&q=80"
     },
     {
         "id": "add2",
         "name": "KML Export Pro",
         "version": "v1.5",
         "description": "Exporta alineamientos, perfiles y redes de tuberías a Google Earth con atributos extendidos.",
+        "longDescription": "Exportación avanzada a Google Earth (KML/KMZ). Permite llevar no solo la geometría, sino también la información de atributos (Data sets) de Civil 3D. Soporta Alineamientos, Redes de Tuberías y Parcelas, manteniendo los estilos y colores asignados.",
         "features": [
             "Georreferenciación precisa",
             "Exportación por capas",
@@ -25,13 +29,16 @@
         ],
         "downloadLink": "#",
         "demoLink": "#",
-        "image": null
+        "videoUrl": "https://www.youtube.com/embed/placeholder2",
+        "image": null,
+        "screenshot": null
     },
     {
         "id": "add3",
         "name": "Profile View Manager",
         "version": "v3.0",
         "description": "Herramienta masiva para la creación y edición de vistas de perfil y guitarras.",
+        "longDescription": "Automatiza la creación de vistas de perfil para cientos de alineamientos. Configura bandas (guitarras) de forma masiva y aplica estilos estandarizados en segundos. Ahorra horas de trabajo manual en proyectos de carreteras extensas.",
         "features": [
             "Creación masiva",
             "Edición de estilos en lote",
@@ -39,6 +46,8 @@
         ],
         "downloadLink": "#",
         "demoLink": "#",
-        "image": null
+        "videoUrl": "https://www.youtube.com/embed/placeholder3",
+        "image": null,
+        "screenshot": null
     }
 ]
