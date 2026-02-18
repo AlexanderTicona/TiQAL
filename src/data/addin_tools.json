@@ -1,0 +1,44 @@
+[
+    {
+        "id": "add1",
+        "name": "Slope Pattern Generator",
+        "version": "v2.1",
+        "description": "Genera patrones de talud automáticos en Civil 3D. Compatible con versiones 2022-2025.",
+        "features": [
+            "Patrones personalizables",
+            "Actualización dinámica",
+            "Soporte para Corredores"
+        ],
+        "downloadLink": "#",
+        "demoLink": "#",
+        "image": "https://images.unsplash.com/photo-1581094794329-cd11965d152a?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "id": "add2",
+        "name": "KML Export Pro",
+        "version": "v1.5",
+        "description": "Exporta alineamientos, perfiles y redes de tuberías a Google Earth con atributos extendidos.",
+        "features": [
+            "Georreferenciación precisa",
+            "Exportación por capas",
+            "Atributos de objeto"
+        ],
+        "downloadLink": "#",
+        "demoLink": "#",
+        "image": null
+    },
+    {
+        "id": "add3",
+        "name": "Profile View Manager",
+        "version": "v3.0",
+        "description": "Herramienta masiva para la creación y edición de vistas de perfil y guitarras.",
+        "features": [
+            "Creación masiva",
+            "Edición de estilos en lote",
+            "Reportes de elevación"
+        ],
+        "downloadLink": "#",
+        "demoLink": "#",
+        "image": null
+    }
+]

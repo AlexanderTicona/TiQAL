@@ -1,0 +1,43 @@
+{
+    "General": [
+        {
+            "id": "g1",
+            "title": "Bienvenido al Aula Virtual",
+            "type": "text",
+            "content": "Aquí encontrarás una colección de recursos seleccionados para dominar Civil 3D y otras herramientas de ingeniería. Selecciona una categoría del menú para comenzar.",
+            "image": null
+        }
+    ],
+    "Alineamientos": [
+        {
+            "id": "a1",
+            "title": "Creación de Alineamientos desde Polilínea",
+            "type": "video",
+            "videoId": "MPMPbtbB-yw",
+            "content": "Aprende a convertir objetos de AutoCAD en alineamientos inteligentes de Civil 3D preservando la geometría original."
+        },
+        {
+            "id": "a2",
+            "title": "Desfase de Alineamientos (Offset)",
+            "type": "video",
+            "videoId": "j5vtfOFzP64",
+            "content": "Técnicas para crear desfases dinámicos vinculados al eje principal, ideal para bordes de calzada y sobreanchos."
+        },
+        {
+            "id": "a3",
+            "title": "Alineamientos a partir de Puntos",
+            "type": "video",
+            "videoId": "XLaKMPeyEoU",
+            "content": "Método para generar ejes basándose en levantamientos topográficos de puntos existentes."
+        }
+    ],
+    "Puntos": [
+        {
+            "id": "p1",
+            "title": "Gestión de Grupos de Puntos",
+            "type": "text",
+            "content": "Los grupos de puntos son fundamentales para organizar grandes levantamientos. Utiliza consultas SQL para filtrar puntos por descripción o elevación.",
+            "image": "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=800&q=80"
+        }
+    ]
+}

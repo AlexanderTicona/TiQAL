@@ -1,0 +1,18 @@
+{
+  "name": "Ing. Civil Pro",
+  "title": "Especialista en Trazo, Topografía y BIM 4.0",
+  "bio": "Ingeniero Civil apasionado por la tecnología y la innovación. Desarrollo soluciones personalizadas para Civil 3D y comparto conocimiento para formar a la nueva generación de ingenieros.",
+  "links": {
+    "linkedin": "https://linkedin.com",
+    "youtube": "https://youtube.com",
+    "email": "contacto@ingenierocivil.com"
+  },
+  "skills": [
+    "Civil 3D",
+    "InfraWorks",
+    "BIM Management",
+    "C# API Development",
+    "Topografía Avanzada",
+    "Revit"
+  ]
+}

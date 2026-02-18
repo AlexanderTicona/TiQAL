@@ -1,0 +1,41 @@
+[
+    {
+        "id": 1,
+        "title": "Diseño Geométrico de Carretera Andina",
+        "category": "Vial",
+        "description": "Elaboración completa del trazo y diseño geométrico cumpliendo normatividad vigente. Uso de Civil 3D y Subassembly Composer.",
+        "image": "project1.jpg",
+        "tags": [
+            "Road Design",
+            "Topography",
+            "Civil 3D"
+        ],
+        "link": "#"
+    },
+    {
+        "id": 2,
+        "title": "Levantamiento Topográfico de Alta Precisión",
+        "category": "Topografía",
+        "description": "Uso de drones y estación total para modelado de terreno en 3D para proyecto minero.",
+        "image": "project2.jpg",
+        "tags": [
+            "Surveying",
+            "Drone Mapping",
+            "Point Cloud"
+        ],
+        "link": "#"
+    },
+    {
+        "id": 3,
+        "title": "Automatización BIM para Infraestructura",
+        "category": "Desarrollo",
+        "description": "Desarrollo de scripts en Dynamo y C# para automatizar la generación de planos y metrados.",
+        "image": "project3.jpg",
+        "tags": [
+            "BIM",
+            "Automation",
+            "C#"
+        ],
+        "link": "#"
+    }
+]
