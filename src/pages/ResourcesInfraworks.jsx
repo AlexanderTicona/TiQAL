@@ -1,15 +1,18 @@
 import React, { useState } from 'react';
-import { ChevronRight, Image, BookOpen, Box } from 'lucide-react';
+import { ChevronRight, Image, BookOpen, Box, Globe, Map, Folder } from 'lucide-react';
 import ResourceItem from '../components/ResourceItem';
 import resourcesData from '../data/resources_infraworks.json';
 
 const ResourcesInfraworks = () => {
-    const [activeCategory, setActiveCategory] = useState('Galeria');
+    const [activeCategory, setActiveCategory] = useState('General');
 
     const categories = [
-        { id: 'Galeria', label: 'Galería', icon: <Image size={18} /> },
         { id: 'General', label: 'General', icon: <BookOpen size={18} /> },
-        { id: 'Modelamiento', label: 'Modelamiento', icon: <Box size={18} /> },
+        { id: 'Galeria', label: 'Galería', icon: <Image size={18} /> },
+        { id: 'Infraworks', label: 'Infraworks', icon: <Box size={18} /> },
+        { id: 'GoogleEarth', label: 'Google Earth', icon: <Globe size={18} /> },
+        { id: 'SASPlanet', label: 'SAS Planet', icon: <Map size={18} /> },
+        { id: 'Otros', label: 'Otros', icon: <Folder size={18} /> },
     ];
 
     const activeResources = resourcesData[activeCategory] || [];
@@ -18,7 +21,7 @@ const ResourcesInfraworks = () => {
         <div className="resources-container">
             {/* Sidebar Navigation */}
             <aside className="resources-sidebar">
-                <h3 className="sidebar-title">Infraworks</h3>
+                <h3 className="sidebar-title">Recursos Adicionales</h3>
                 <nav className="sidebar-nav">
                     {categories.map((cat) => (
                         <div
@@ -42,7 +45,7 @@ const ResourcesInfraworks = () => {
                         <span className="text-gradient">{categories.find(c => c.id === activeCategory)?.label}</span>
                     </h1>
                     <p style={{ color: 'var(--text-secondary)' }}>
-                        Recursos y tutoriales de Infraworks para {activeCategory}.
+                        Recursos y tutoriales de {categories.find(c => c.id === activeCategory)?.label}.
                     </p>
                 </div>
 

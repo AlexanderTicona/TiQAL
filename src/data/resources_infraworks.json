@@ -1,5 +1,16 @@
 {
-    "Galeria": [],
     "General": [],
-    "Modelamiento": []
+    "Galeria": [],
+    "Infraworks": [
+        {
+            "id": "inf-01",
+            "title": "Configuración de Vistas",
+            "type": "video",
+            "videoId": "uakITDOD0Nk",
+            "content": "Configuración de tipos de vistas en Infraworks (Vista conceptual, vista de ingeiería, vista personalizada."
+        }
+    ],
+    "GoogleEarth": [],
+    "SASPlanet": [],
+    "Otros": []
 }

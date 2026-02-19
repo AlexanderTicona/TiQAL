@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ChevronRight, BookOpen, Layers, Map, Activity, Mountain, Box, Cpu, Zap, Folder } from 'lucide-react';
+import { ChevronRight, BookOpen, Layers, Map, Activity, Mountain, Box, Cpu, Zap, Folder, Pickaxe } from 'lucide-react';
 import ResourceItem from '../components/ResourceItem';
 import resourcesData from '../data/resources.json';
 
@@ -16,6 +16,7 @@ const Resources = () => {
         { id: 'Corredores', label: 'Corredores (Obra Lineal)', icon: <Layers size={18} /> },
         { id: 'Secciones', label: 'Secciones Transversales', icon: <Layers size={18} /> },
         { id: 'SubassemblyComposer', label: 'Subassembly Composer', icon: <Cpu size={18} /> },
+        { id: 'Explanaciones', label: 'Explanaciones', icon: <Pickaxe size={18} /> },
         { id: 'Dynamo', label: 'Dynamo', icon: <Zap size={18} /> },
         { id: 'Otros', label: 'Otros', icon: <Folder size={18} /> },
     ];

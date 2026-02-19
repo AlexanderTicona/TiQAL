@@ -12,7 +12,7 @@ const Navbar = () => {
   const links = [
     { name: 'Inicio', path: '/' },
     { name: 'Recursos Civil 3D', path: '/resources' },
-    { name: 'Recursos Infraworks', path: '/resources-infraworks' },
+    { name: 'Recursos Adicionales', path: '/resources-infraworks' },
     { name: 'Foro Autodesk', path: '/forum' },
     { name: 'Add-ins & Tools', path: '/addins' },
     { name: 'Proyectos', path: '/projects' },
