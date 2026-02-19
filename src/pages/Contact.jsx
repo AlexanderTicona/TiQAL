@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, MapPin, Linkedin, Github, Send } from 'lucide-react';
+import { Mail, MapPin, Linkedin, Youtube, Send } from 'lucide-react';
 import profileData from '../data/profile.json';
 
 const Contact = () => {
@@ -48,7 +48,7 @@ const Contact = () => {
                         </div>
                         <div className="info-item">
                             <MapPin className="info-icon" size={20} />
-                            <span>Lima, Perú (Disponible Remoto)</span>
+                            <span>Lima, Perú</span>
                         </div>
 
                         <div className="social-links-contact">
@@ -56,7 +56,7 @@ const Contact = () => {
                                 <Linkedin size={24} />
                             </a>
                             <a href={profileData.links.youtube} target="_blank" rel="noopener noreferrer" className="social-btn">
-                                <Github size={24} /> {/* Placeholder for YouTube if Github icon used */}
+                                <Youtube size={24} />
                             </a>
                         </div>
                     </div>

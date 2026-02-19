@@ -1,0 +1,34 @@
+{
+    "publicInfo": {
+        "title": "Comunidad Privada TiQAL",
+        "description": "Accede a contenido exclusivo, grabaciones de sesiones en vivo y recursos avanzados para miembros de la comunidad.",
+        "nextSession": {
+            "title": "Sesión Q&A: Taller de Subensamblajes",
+            "date": "20 de Octubre, 2026",
+            "time": "18:00 GMT-5"
+        }
+    },
+    "vipContent": [
+        {
+            "id": "vip-01",
+            "title": "Grabación: Masterclass Corredores 2026",
+            "type": "video",
+            "url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+            "description": "Sesión completa sobre optimización de obras lineales complejas."
+        },
+        {
+            "id": "vip-02",
+            "title": "Plantilla XML Personalizada",
+            "type": "download",
+            "url": "#",
+            "description": "Archivo de importación para configuraciones de ploteo masivo."
+        },
+        {
+            "id": "vip-03",
+            "title": "Librería de PKTs (Subassembly Composer)",
+            "type": "download",
+            "url": "#",
+            "description": "Colección de 10 subensamblajes listos para usar en proyectos viales."
+        }
+    ]
+}

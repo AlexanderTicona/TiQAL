@@ -9,6 +9,7 @@ import Addins from './pages/Addins';
 import Resources from './pages/Resources';
 import ResourcesInfraworks from './pages/ResourcesInfraworks';
 import Forum from './pages/Forum';
+import Community from './pages/Community';
 import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
 
@@ -22,6 +23,7 @@ function App() {
         <Route path="resources" element={<Resources />} />
         <Route path="resources-infraworks" element={<ResourcesInfraworks />} />
         <Route path="forum" element={<Forum />} />
+        <Route path="community" element={<Community />} />
         <Route path="contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
       </Route>

@@ -16,6 +16,7 @@ const Navbar = () => {
     { name: 'Foro Autodesk', path: '/forum' },
     { name: 'Add-ins & Tools', path: '/addins' },
     { name: 'Proyectos', path: '/projects' },
+    { name: 'Comunidad', path: '/community' },
     { name: 'Contacto', path: '/contact' },
   ];
 
@@ -50,16 +51,12 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop Menu */}
-        <div className="desktop-menu" style={{ display: 'flex', gap: '2rem' }}>
+        <div className="desktop-menu" style={{ display: 'flex', gap: '0.5rem' }}>
           {links.map((link) => (
             <Link
               key={link.path}
               to={link.path}
-              style={{
-                color: isActive(link.path) ? 'var(--accent-primary)' : 'var(--text-primary)',
-                fontWeight: isActive(link.path) ? '600' : '400',
-                fontSize: '0.95rem'
-              }}
+              className={`nav-link ${isActive(link.path) ? 'active' : ''}`}
             >
               {link.name}
             </Link>
