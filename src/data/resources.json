@@ -11,42 +11,67 @@
     "Alineamientos": [
         {
             "id": "a1",
-            "title": "Creación de Alineamientos desde Polilínea",
-            "type": "video",
-            "videoId": "MPMPbtbB-yw",
-            "content": "Aprende a convertir objetos de AutoCAD en alineamientos inteligentes de Civil 3D preservando la geometría original."
-        },
-        {
-            "id": "a2",
-            "title": "Desfase de Alineamientos (Offset)",
-            "type": "video",
-            "videoId": "j5vtfOFzP64",
-            "content": "Técnicas para crear desfases dinámicos vinculados al eje principal, ideal para bordes de calzada y sobreanchos."
-        },
-        {
-            "id": "a3",
-            "title": "Alineamientos a partir de Puntos",
+            "title": "¿Cómo unir Alineamientos?",
             "type": "video",
             "videoId": "XLaKMPeyEoU",
-            "content": "Método para generar ejes basándose en levantamientos topográficos de puntos existentes."
+            "content": "Procedimiento para poder unir dos alineamientos en AutoCAD Civil 3D. Mediante el uso de los archivos del tipo LandXML."
         }
     ],
     "Puntos": [
         {
-            "id": "p1",
-            "title": "Gestión de Grupos de Puntos",
-            "type": "text",
-            "content": "Los grupos de puntos son fundamentales para organizar grandes levantamientos. Utiliza consultas SQL para filtrar puntos por descripción o elevación.",
-            "image": "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=800&q=80"
+            "id": "pun1",
+            "title": "Creación de COGO POINTS a partir de una superficie en un formato de grillado",
+            "type": "video",
+            "videoId": "j5vtfOFzP64",
+            "content": "Se explica como crear puntos cogo de una superficie (TIN), con formato de grillado, manteniendo una distancia en X, Y y de ser necesario rotación."
+        },
+        {
+            "id": "pun2",
+            "title": "¿Problemas al importar puntos a Civil 3D?",
+            "type": "video",
+            "videoId": "KhBhly1d518",
+            "content": "Se explica los problemas mas comunes al importar puntos a Civil 3D y como solucionarlos."
         }
     ],
-    "Superficies": [],
-    "Perfiles": [],
+    "Superficies": [
+        {
+            "id": "tin1",
+            "title": "Análisis de superficies por elevaciones y pendientes",
+            "type": "video",
+            "videoId": "NN9P0xxEsaQ",
+            "content": "Proceso a realizar para generar un análisis de superficies por Elevaciones y pendientes, así también sobre como insertar la tabla de leyendas de los análisis realizados en AutoCAD Civil 3D."
+        }
+    ],
+    "Perfiles": [
+        {
+            "id": "per1",
+            "title": "Asociar perfil a un Alineamiento a otro Alineamiento",
+            "type": "video",
+            "videoId": "dzLg5Y0H8JE",
+            "content": "Alternativa de solución a una consulta del foro oficial de Civil 3D, sobre como asociar un perfil de un alineamiento, a otro alineamiento."
+        }
+    ],
     "Ensamblajes": [],
     "Corredores": [],
     "Secciones": [],
     "SubassemblyComposer": [],
     "Explanaciones": [],
-    "Dynamo": [],
-    "Otros": []
+    "Dynamo": [
+        {
+            "id": "dyn1",
+            "title": "Etiquetado de múltiples Alineamientos",
+            "type": "video",
+            "videoId": "MPMPbtbB-yw",
+            "content": "Construción de Script en DYNAMO para poder controlar las etiquetas de múltiples alineamientos."
+        }
+    ],
+    "Otros": [
+        {
+            "id": "otr1",
+            "title": "QUANTITY TAKE OFF │ Unidades en QTO Manager - Takeoff",
+            "type": "video",
+            "videoId": "y2sms5_yjyk",
+            "content": "Introducción al cómputo de materiales con QTO Manager - Takeoff en AutoCAD Civil 3D │ Configuración de UNIDADES."
+        }
+    ]
 }

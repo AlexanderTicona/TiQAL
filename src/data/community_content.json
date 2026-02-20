@@ -11,10 +11,10 @@
     "vipContent": [
         {
             "id": "vip-01",
-            "title": "Grabación: Masterclass Corredores 2026",
+            "title": "Sesión 1 │ Introducción a intersecciones",
             "type": "video",
-            "url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-            "description": "Sesión completa sobre optimización de obras lineales complejas."
+            "url": "https://www.youtube.com/watch?v=GLfiArYdRP4",
+            "description": "Reunión con miembros de la comunidad, tema a tratar: Intersecciones."
         },
         {
             "id": "vip-02",

@@ -11,6 +11,14 @@
         }
     ],
     "GoogleEarth": [],
-    "SASPlanet": [],
+    "SASPlanet": [
+        {
+            "id": "sas-01",
+            "title": "Generación de ORTOFOTOS TIFF",
+            "type": "video",
+            "videoId": "WqKrgEcN9hY",
+            "content": "Generación de ortofotos en formato TIFF, georeferenciados con la herramienta SAS Planet."
+        }
+    ],
     "Otros": []
 }
