@@ -1,0 +1,107 @@
+{
+    "civil3d": {
+        "General": [
+            {
+                "id": "g1",
+                "title": "Bienvenido al Aula Virtual",
+                "type": "text",
+                "content": "Aquí encontrarás una colección de recursos seleccionados para dominar Civil 3D y otras herramientas de ingeniería. Selecciona una categoría del menú para comenzar."
+            }
+        ],
+        "Puntos": [
+            {
+                "id": "pun1",
+                "title": "Creación de COGO POINTS a partir de una superficie en un formato de grillado",
+                "type": "video",
+                "videoId": "j5vtfOFzP64",
+                "content": "Se explica como crear puntos cogo de una superficie (TIN), con formato de grillado, manteniendo una distancia en X, Y y de ser necesario rotación."
+            },
+            {
+                "id": "pun2",
+                "title": "¿Problemas al importar puntos a Civil 3D?",
+                "type": "video",
+                "videoId": "KhBhly1d518",
+                "content": "Se explica los problemas mas comunes al importar puntos a Civil 3D y como solucionarlos."
+            }
+        ],
+        "Superficies": [
+            {
+                "id": "tin1",
+                "title": "Análisis de superficies por elevaciones y pendientes",
+                "type": "video",
+                "videoId": "NN9P0xxEsaQ",
+                "content": "Proceso a realizar para generar un análisis de superficies por Elevaciones y pendientes, así también sobre como insertar la tabla de leyendas de los análisis realizados en AutoCAD Civil 3D."
+            },
+            {
+                "id": "art-tin1",
+                "title": "Análisis de Superficies - Guía Completa",
+                "type": "article",
+                "content": "Guía paso a paso para realizar análisis por elevaciones y pendientes en Civil 3D. Incluye configuración de rangos y tablas de leyenda.",
+                "contentFile": "articulos/superficies-analisis.md"
+            },
+            {
+                "id": "art-tin2",
+                "title": "Líneas de Rotura (Breaklines) - Guía Completa",
+                "type": "article",
+                "content": "Domina las Breaklines en Civil 3D: tipos disponibles (Standard Wall Proximity) procedimientos y buenas prácticas para el control preciso de superficies.",
+                "contentFile": "articulos/breaklines-superficies.md"
+            }
+        ],
+        "Alineamientos": [
+            {
+                "id": "a1",
+                "title": "¿Cómo unir Alineamientos?",
+                "type": "video",
+                "videoId": "XLaKMPeyEoU",
+                "content": "Procedimiento para poder unir dos alineamientos en AutoCAD Civil 3D. Mediante el uso de los archivos del tipo LandXML."
+            }
+        ],
+        "Perfiles": [
+            {
+                "id": "per1",
+                "title": "Asociar perfil a un Alineamiento a otro Alineamiento",
+                "type": "video",
+                "videoId": "dzLg5Y0H8JE",
+                "content": "Alternativa de solución a una consulta del foro oficial de Civil 3D, sobre como asociar un perfil de un alineamiento, a otro alineamiento."
+            }
+        ],
+        "Dynamo": [
+            {
+                "id": "dyn1",
+                "title": "Etiquetado de múltiples Alineamientos",
+                "type": "video",
+                "videoId": "MPMPbtbB-yw",
+                "content": "Construción de Script en DYNAMO para poder controlar las etiquetas de múltiples alineamientos."
+            }
+        ],
+        "Otros": [
+            {
+                "id": "otr1",
+                "title": "QUANTITY TAKE OFF │ Unidades en QTO Manager - Takeoff",
+                "type": "video",
+                "videoId": "y2sms5_yjyk",
+                "content": "Introducción al cómputo de materiales con QTO Manager - Takeoff en AutoCAD Civil 3D │ Configuración de UNIDADES."
+            }
+        ]
+    },
+    "complementarios": {
+        "Infraworks": [
+            {
+                "id": "inf-01",
+                "title": "Configuración de Vistas",
+                "type": "video",
+                "videoId": "uakITDOD0Nk",
+                "content": "Configuración de tipos de vistas en Infraworks (Vista conceptual, vista de ingeiería, vista personalizada."
+            }
+        ],
+        "SASPlanet": [
+            {
+                "id": "sas-01",
+                "title": "Generación de ORTOFOTOS TIFF",
+                "type": "video",
+                "videoId": "WqKrgEcN9hY",
+                "content": "Generación de ortofotos en formato TIFF, georeferenciados con la herramienta SAS Planet."
+            }
+        ]
+    }
+}

@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { ChevronRight, Image, BookOpen, Box, Globe, Map, Folder } from 'lucide-react';
 import ResourceItem from '../components/ResourceItem';
 import resourcesData from '../data/resources_infraworks.json';
 
 const ResourcesInfraworks = () => {
     const [activeCategory, setActiveCategory] = useState('General');
+    const contentRef = useRef(null);
 
     const categories = [
         { id: 'General', label: 'General', icon: <BookOpen size={18} /> },
@@ -17,9 +18,32 @@ const ResourcesInfraworks = () => {
 
     const activeResources = resourcesData[activeCategory] || [];
 
+    const handleCategorySelect = (catId) => {
+        setActiveCategory(catId);
+        if (window.innerWidth <= 768 && contentRef.current) {
+            setTimeout(() => {
+                contentRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 100);
+        }
+    };
+
     return (
         <div className="resources-container">
-            {/* Sidebar Navigation */}
+            {/* Mobile Horizontal Tabs */}
+            <div className="mobile-category-tabs">
+                {categories.map((cat) => (
+                    <button
+                        key={cat.id}
+                        className={`mobile-tab ${activeCategory === cat.id ? 'active' : ''}`}
+                        onClick={() => handleCategorySelect(cat.id)}
+                    >
+                        {cat.icon}
+                        <span>{cat.label}</span>
+                    </button>
+                ))}
+            </div>
+
+            {/* Sidebar Navigation (Desktop) */}
             <aside className="resources-sidebar">
                 <h3 className="sidebar-title">Recursos Adicionales</h3>
                 <nav className="sidebar-nav">
@@ -27,7 +51,7 @@ const ResourcesInfraworks = () => {
                         <div
                             key={cat.id}
                             className={`sidebar-item ${activeCategory === cat.id ? 'active' : ''}`}
-                            onClick={() => setActiveCategory(cat.id)}
+                            onClick={() => handleCategorySelect(cat.id)}
                         >
                             <span style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                                 {cat.icon} {cat.label}
@@ -39,7 +63,7 @@ const ResourcesInfraworks = () => {
             </aside>
 
             {/* Main Content Area */}
-            <section className="resources-content">
+            <section className="resources-content" ref={contentRef}>
                 <div className="content-header">
                     <h1 className="content-title">
                         <span className="text-gradient">{categories.find(c => c.id === activeCategory)?.label}</span>
@@ -55,13 +79,7 @@ const ResourcesInfraworks = () => {
                             <ResourceItem key={item.id} item={item} />
                         ))
                     ) : (
-                        <div style={{
-                            padding: '3rem',
-                            textAlign: 'center',
-                            backgroundColor: 'var(--bg-secondary)',
-                            borderRadius: '12px',
-                            border: '1px solid var(--grid-line)'
-                        }}>
+                        <div className="resource-empty-state">
                             <p style={{ color: 'var(--text-secondary)' }}>
                                 Pronto subiremos contenido para esta sección.
                             </p>

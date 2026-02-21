@@ -1,0 +1,13 @@
+grupo,categoria,id,titulo,tipo,videoId,imagen,contenido,contentFile
+civil3d,General,g1,Bienvenido al Aula Virtual,text,,,Aquí encontrarás una colección de recursos seleccionados para dominar Civil 3D y otras herramientas de ingeniería. Selecciona una categoría del menú para comenzar.,
+civil3d,Puntos,pun1,Creación de COGO POINTS a partir de una superficie en un formato de grillado,video,j5vtfOFzP64,,"Se explica como crear puntos cogo de una superficie (TIN), con formato de grillado, manteniendo una distancia en X, Y y de ser necesario rotación.",
+civil3d,Puntos,pun2,¿Problemas al importar puntos a Civil 3D?,video,KhBhly1d518,,Se explica los problemas mas comunes al importar puntos a Civil 3D y como solucionarlos.,
+civil3d,Superficies,tin1,Análisis de superficies por elevaciones y pendientes,video,NN9P0xxEsaQ,,"Proceso a realizar para generar un análisis de superficies por Elevaciones y pendientes, así también sobre como insertar la tabla de leyendas de los análisis realizados en AutoCAD Civil 3D.",
+civil3d,Superficies,art-tin1,Análisis de Superficies - Guía Completa,article,,,Guía paso a paso para realizar análisis por elevaciones y pendientes en Civil 3D. Incluye configuración de rangos y tablas de leyenda.,articulos/superficies-analisis.md
+civil3d,Superficies,art-tin2,Líneas de Rotura (Breaklines) - Guía Completa,article,,,Domina las Breaklines en Civil 3D: tipos disponibles (Standard Wall Proximity) procedimientos y buenas prácticas para el control preciso de superficies.,articulos/breaklines-superficies.md
+civil3d,Alineamientos,a1,¿Cómo unir Alineamientos?,video,XLaKMPeyEoU,,Procedimiento para poder unir dos alineamientos en AutoCAD Civil 3D. Mediante el uso de los archivos del tipo LandXML.,
+civil3d,Perfiles,per1,Asociar perfil a un Alineamiento a otro Alineamiento,video,dzLg5Y0H8JE,,"Alternativa de solución a una consulta del foro oficial de Civil 3D, sobre como asociar un perfil de un alineamiento, a otro alineamiento.",
+civil3d,Dynamo,dyn1,Etiquetado de múltiples Alineamientos,video,MPMPbtbB-yw,,Construción de Script en DYNAMO para poder controlar las etiquetas de múltiples alineamientos.,
+civil3d,Otros,otr1,QUANTITY TAKE OFF │ Unidades en QTO Manager - Takeoff,video,y2sms5_yjyk,,Introducción al cómputo de materiales con QTO Manager - Takeoff en AutoCAD Civil 3D │ Configuración de UNIDADES.,
+complementarios,Infraworks,inf-01,Configuración de Vistas,video,uakITDOD0Nk,,"Configuración de tipos de vistas en Infraworks (Vista conceptual, vista de ingeiería, vista personalizada.",
+complementarios,SASPlanet,sas-01,Generación de ORTOFOTOS TIFF,video,WqKrgEcN9hY,,"Generación de ortofotos en formato TIFF, georeferenciados con la herramienta SAS Planet.",
